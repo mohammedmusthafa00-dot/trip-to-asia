@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+
+[[forms]]
+  name = "enquiry"
+
+[[forms]]
+  name = "custom-itinerary"
