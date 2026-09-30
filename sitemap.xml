@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://triptoasia.online/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://www.triptoasia.online/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.triptoasia.online/bangkok-escape.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.triptoasia.online/bangkok-pattaya.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.triptoasia.online/bangkok-chiangmai.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.triptoasia.online/bangkok-pattaya-phuket.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.triptoasia.online/phuket-krabi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.triptoasia.online/custom-itinerary.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

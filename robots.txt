@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 
-Sitemap: https://triptoasia.online/sitemap.xml
+Sitemap: https://www.triptoasia.online/sitemap.xml
