@@ -1,0 +1,11 @@
+/* WhatsApp chat button, shared by every page */
+.wa-btn { display:inline-flex; align-items:center; gap:8px; flex:none; background:#0F7A6E; color:#fff; font:700 .9rem/1 'Manrope', system-ui, sans-serif; padding:10px 16px; border-radius:0; text-decoration:none; white-space:nowrap; transition:background .15s ease; }
+.wa-btn:hover { background:#0c655b; }
+.wa-btn:focus-visible { outline:2px solid #0F7A6E; outline-offset:3px; }
+.wa-btn svg { width:20px; height:20px; fill:currentColor; flex:none; }
+.bar-right { display:flex; align-items:center; gap:8px; }
+.form-actions .wa-btn { padding:14px 24px; font-size:.95rem; }
+@media (max-width:560px) {
+  .bar .wa-btn span { display:none; }
+  .bar .wa-btn { padding:10px; }
+}
