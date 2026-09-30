@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://triptothai.netlify.app/sitemap.xml
+Sitemap: https://triptoasia.online/sitemap.xml
