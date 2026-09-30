@@ -26,7 +26,25 @@
       "url": "https://www.triptoasia.online/",
       "logo": "https://www.triptoasia.online/images/logo.webp",
       "telephone": "+91 96776 45010",
-      "description": "Thailand tour packages and custom itineraries for travellers from India, with 3-star hotels, airport transfers, Indian food and Tamil-speaking guides."
+      "slogan": "Thailand holidays, made easy with us",
+      "description": "Trip to Asia is a Thailand-focused travel agency for travellers from India. It sells ready-made and custom Thailand tour packages with 3-star hotels, airport transfers, entry fees, Indian food and Tamil-speaking guides.",
+      "knowsLanguage": ["en", "ta"],
+      "knowsAbout": ["Thailand tour packages", "Bangkok", "Pattaya", "Chiang Mai", "Phuket", "Krabi", "Custom travel itineraries"],
+      "sameAs": ["https://wa.me/919677645010"],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+91 96776 45010",
+        "availableLanguage": ["English", "Tamil"]
+      },
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Bangkok Escape", "description": "3 nights / 4 days in Bangkok with 3-star hotel, airport transfers, entry fees, Indian food, city tour, Safari World, Sea Life and Floating Market.", "url": "https://www.triptoasia.online/bangkok-escape.html" } },
+        { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Bangkok + Pattaya", "description": "4 nights / 5 days with 3-star hotels, airport transfers, entry fees, Indian food, Safari World, Floating Market, Walking Street, island trip and Pattaya tour.", "url": "https://www.triptoasia.online/bangkok-pattaya.html" } },
+        { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Bangkok + Chiang Mai", "description": "5 nights / 6 days with 3-star hotels, airport transfers, entry fees, Indian food, city tour, Mae Kampong village, temples and a local food tour.", "url": "https://www.triptoasia.online/bangkok-chiangmai.html" } },
+        { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Bangkok + Pattaya + Phuket", "description": "6 nights / 7 days with 3-star hotels, airport transfers, entry fees, Indian food, city tour, Walking Street, museum and temple visit and a one-day island tour.", "url": "https://www.triptoasia.online/bangkok-pattaya-phuket.html" } },
+        { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Phuket + Krabi Islands", "description": "5 nights / 6 days with 3-star hotels, an island stay, islands tour, snorkelling or diving, Walking Street and a seafood buffet.", "url": "https://www.triptoasia.online/phuket-krabi.html" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Thailand itinerary", "description": "A Thailand trip planned around your chosen destinations, dates and group size.", "url": "https://www.triptoasia.online/custom-itinerary.html" } }
+      ]
     },
     {
       "@type": "WebPage",
@@ -36,7 +54,9 @@
       "inLanguage": "en",
       "isPartOf": { "@id": "https://www.triptoasia.online/#website" },
       "about": { "@id": "https://www.triptoasia.online/#organization" },
-      "publisher": { "@id": "https://www.triptoasia.online/#organization" }
+      "author": { "@id": "https://www.triptoasia.online/#organization" },
+      "publisher": { "@id": "https://www.triptoasia.online/#organization" },
+      "mainEntity": { "@id": "https://www.triptoasia.online/#organization" }
     },
     {
       "@type": "WebSite",
@@ -72,6 +92,11 @@
           "@type": "Question",
           "name": "How much do the packages cost?",
           "acceptedAnswer": { "@type": "Answer", "text": "The current price is shown on each package card. Prices are marked * because they are not yet confirmed, so send an enquiry for the final quote." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a visa for Thailand?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Visa rules for Indian passport holders can change, so check the latest requirements on the official Thailand e-Visa website (thaievisa.go.th) or with the Royal Thai Embassy before you book." }
         },
         {
           "@type": "Question",
@@ -290,6 +315,12 @@
   .hero .summary b { color:#fff; }
   .faq h3 { font-size:1.1rem; margin:24px 0 6px; }
   .faq p { color:var(--muted); max-width:70ch; }
+  .faq a { color:var(--navy); font-weight:600; }
+  .table-wrap { overflow-x:auto; margin:12px 0 4px; }
+  .glance { border-collapse:collapse; width:100%; min-width:520px; background:var(--card); border:1px solid var(--line); }
+  .glance th, .glance td { text-align:left; padding:12px 16px; border-bottom:1px solid var(--line); font-size:.92rem; }
+  .glance thead th { background:var(--navy-deep); color:#fff; font-size:.75rem; letter-spacing:.06em; text-transform:uppercase; }
+  .glance tbody th { font-weight:700; }
   @media (max-width:560px) { .hero .wrap { padding-bottom:72px; } }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior:auto; }
@@ -513,11 +544,40 @@
     </div>
   </section>
 
-  <section id="faq" class="faq">
+  <section id="about" class="faq">
     <div class="wrap">
       <div class="head">
         <div>
           <span class="num">04</span>
+          <h2>About Trip to Asia</h2>
+        </div>
+        <p>Who we are and what each package covers.</p>
+      </div>
+      <p>Trip to Asia is a Thailand-focused travel agency for travellers from India. We plan hotels, airport transfers, entry fees, Indian food and guided tours end to end, with Tamil-speaking guides on selected tours (minimum 4 members). Our packages cover five destinations: Bangkok, Pattaya, Chiang Mai, Phuket and Krabi. If none of them fits, we build a custom itinerary around your dates and group size. You can reach the Trip to Asia team on WhatsApp at +91 96776 45010 or through the enquiry form on this page.</p>
+      <h3>Packages at a glance</h3>
+      <div class="table-wrap">
+        <table class="glance">
+          <thead><tr><th scope="col">Package</th><th scope="col">Length</th><th scope="col">Route</th><th scope="col">Price*</th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><a href="bangkok-escape.html">Bangkok Escape</a></th><td>3 nights / 4 days</td><td>Bangkok</td><td>&#8377;24,999</td></tr>
+            <tr><th scope="row"><a href="bangkok-pattaya.html">Bangkok + Pattaya</a></th><td>4 nights / 5 days</td><td>Bangkok, Pattaya</td><td>&#8377;29,999</td></tr>
+            <tr><th scope="row"><a href="bangkok-chiangmai.html">Bangkok + Chiang Mai</a></th><td>5 nights / 6 days</td><td>Bangkok, Chiang Mai</td><td>&#8377;48,999</td></tr>
+            <tr><th scope="row"><a href="bangkok-pattaya-phuket.html">Bangkok + Pattaya + Phuket</a></th><td>6 nights / 7 days</td><td>Bangkok, Pattaya, Phuket</td><td>&#8377;49,999</td></tr>
+            <tr><th scope="row"><a href="phuket-krabi.html">Phuket + Krabi Islands</a></th><td>5 nights / 6 days</td><td>Phuket, Krabi</td><td>&#8377;64,999</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">*Prices are in Indian rupees and are not yet confirmed. Send an enquiry for the final quote.</p>
+      <h3>Useful official sources</h3>
+      <p>For general destination information, see the <a href="https://www.tourismthailand.org/" target="_blank" rel="noopener">Tourism Authority of Thailand</a>. For entry requirements, see the official <a href="https://www.thaievisa.go.th/" target="_blank" rel="noopener">Thailand e-Visa website</a>.</p>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <span class="num">05</span>
           <h2>Frequently asked questions</h2>
         </div>
         <p>Quick answers about our Thailand packages.</p>
@@ -532,6 +592,8 @@
       <p>Yes. Send your destinations, travel dates and number of travellers (up to 10) on the <a href="custom-itinerary.html">Custom Itinerary page</a>, and we will get back to you with a plan and a quote.</p>
       <h3>How much do the packages cost?</h3>
       <p>The current price is shown on each package card. Prices are marked * because they are not yet confirmed, so send an enquiry for the final quote.</p>
+      <h3>Do I need a visa for Thailand?</h3>
+      <p>Visa rules for Indian passport holders can change, so check the latest requirements on the official <a href="https://www.thaievisa.go.th/" target="_blank" rel="noopener">Thailand e-Visa website</a> or with the Royal Thai Embassy before you book.</p>
       <h3>How do I enquire or book?</h3>
       <p>Fill in the enquiry form below or message us on WhatsApp at +91 96776 45010.</p>
     </div>
@@ -541,7 +603,7 @@
     <div class="wrap">
       <div class="head">
         <div>
-          <span class="num">05</span>
+          <span class="num">06</span>
           <h2>Enquiry now</h2>
         </div>
         <p>Tell us which package you like and how many are travelling, and we will get back to you.</p>
