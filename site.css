@@ -100,6 +100,12 @@ table { border-collapse:collapse; width:100%; min-width:480px; background:var(--
 th, td { text-align:left; padding:11px 14px; border-bottom:1px solid var(--line); font-size:.92rem; vertical-align:top; }
 thead th { background:var(--navy-deep); color:#fff; font-size:.75rem; letter-spacing:.06em; text-transform:uppercase; }
 
+/* photo gallery */
+.gallery { columns:3 250px; column-gap:14px; }
+.gallery figure { margin:0 0 14px; break-inside:avoid; background:var(--card); border:1px solid var(--line); box-shadow:var(--shadow); }
+.gallery img { display:block; width:100%; height:auto; }
+.gallery figcaption { padding:8px 12px 10px; font-size:.82rem; color:var(--muted); }
+
 /* call to action */
 .cta { margin-top:56px; background:var(--bg-alt); border-top:1px solid var(--line); padding:40px 0; }
 .cta .wrap { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:16px; }
