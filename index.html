@@ -318,10 +318,17 @@
   .linkgrid a:hover { border-color:var(--navy); }
   .linkgrid span { display:block; font-weight:500; font-size:.82rem; color:var(--muted); margin-top:2px; }
   .sub-head { font-size:1.15rem; margin:0 0 12px; }
-  .gallery { columns:3 250px; column-gap:14px; }
-  .gallery figure { margin:0 0 14px; break-inside:avoid; background:var(--card); border:1px solid var(--line); box-shadow:var(--shadow); }
-  .gallery img { display:block; width:100%; height:auto; }
-  .gallery figcaption { padding:8px 12px 10px; font-size:.82rem; color:var(--muted); }
+  .gallery-card { position:relative; display:block; overflow:hidden; border:1px solid var(--line); background:var(--card); box-shadow:var(--shadow); text-decoration:none; color:#fff; }
+  .gallery-track { display:flex; gap:10px; width:max-content; animation:gallery-scroll 60s linear infinite; }
+  .gallery-track img { display:block; height:260px; width:auto; flex:none; }
+  .gallery-card:hover .gallery-track, .gallery-card:focus-visible .gallery-track { animation-play-state:paused; }
+  .gallery-label { position:absolute; left:0; right:0; bottom:0; display:flex; flex-wrap:wrap; justify-content:space-between; gap:4px 16px; padding:32px 18px 14px; background:linear-gradient(0deg, rgba(10,16,48,.88), rgba(10,16,48,0)); font-size:.95rem; }
+  .gallery-label span { font-weight:700; color:var(--sun); }
+  @keyframes gallery-scroll { to { transform:translateX(calc(-50% - 5px)); } }
+  @media (prefers-reduced-motion: reduce) {
+    .gallery-card { overflow-x:auto; }
+    .gallery-track { animation:none; }
+  }
   .foot-inner { max-width:1080px; margin:0 auto; padding:0 20px; }
   .foot .cols { display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:24px; }
   .foot h2 { font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; color:var(--ink); margin-bottom:10px; font-family:var(--sans); }
@@ -552,25 +559,7 @@
     </div>
   </section>
 
-  <section id="photos">
-    <div class="wrap">
-      <h2 class="sub-head">Photos from our Thailand trips</h2>
-      <div class="gallery">
-        <figure><img src="images/trip-wat-arun.jpg" alt="Visitor in traditional Thai dress at Wat Arun in Bangkok" width="960" height="1280" loading="lazy"><figcaption>Wat Arun, Bangkok</figcaption></figure>
-        <figure><img src="images/trip-koh-larn-view.jpg" alt="Turquoise bay and beach seen from a hilltop viewpoint on Koh Larn near Pattaya" width="1280" height="960" loading="lazy"><figcaption>Koh Larn viewpoint, near Pattaya</figcaption></figure>
-        <figure><img src="images/trip-mae-kampong.jpg" alt="Wooden shop fronts with red lanterns in Mae Kampong village near Chiang Mai" width="960" height="1280" loading="lazy"><figcaption>Mae Kampong village, near Chiang Mai</figcaption></figure>
-        <figure><img src="images/trip-yaowarat-night.jpg" alt="Yaowarat (Chinatown) street in Bangkok at night with neon signs, lanterns and tuk-tuks" width="720" height="1280" loading="lazy"><figcaption>Yaowarat (Chinatown), Bangkok, at night</figcaption></figure>
-        <figure><img src="images/trip-northern-thai-food.jpg" alt="Northern Thai dishes on a wooden table, including chilli dip, soup and sticky rice" width="960" height="1280" loading="lazy"><figcaption>A Northern Thai meal</figcaption></figure>
-        <figure><img src="images/trip-koh-larn-rocks.jpg" alt="Turquoise water and a green hill seen from the rocks on Koh Larn near Pattaya" width="960" height="1280" loading="lazy"><figcaption>Clear water off Koh Larn</figcaption></figure>
-        <figure><img src="images/trip-lake-sunset.jpg" alt="People watching the sunset over a lake and hazy mountains" width="1280" height="720" loading="lazy"><figcaption>Sunset by a lake</figcaption></figure>
-        <figure><img src="images/trip-pattaya-ripleys.jpg" alt="Royal Garden Plaza in Pattaya with a red plane on the building" width="720" height="1280" loading="lazy"><figcaption>Royal Garden Plaza, Pattaya</figcaption></figure>
-        <figure><img src="images/trip-street-snack.jpg" alt="Fried dinosaur-shaped snack on a stick from a Thai street stall" width="960" height="1280" loading="lazy"><figcaption>Street snack</figcaption></figure>
-        <figure><img src="images/trip-room-twin.jpg" alt="Hotel room with two twin beds and white linen" width="1280" height="960" loading="lazy"><figcaption>Twin room</figcaption></figure>
-        <figure><img src="images/trip-room-balcony.jpg" alt="Hotel balcony with wooden chairs and a view over rooftops" width="1280" height="960" loading="lazy"><figcaption>Room balcony</figcaption></figure>
-        <figure><img src="images/trip-room-window.jpg" alt="Hotel room with a sliding balcony door and curtains" width="1280" height="960" loading="lazy"><figcaption>Room with balcony door</figcaption></figure>
-      </div>
-    </div>
-  </section>
+  <section id="photos"><div class="wrap"><h2 class="sub-head">Photo gallery</h2><a class="gallery-card" href="/gallery.html" aria-label="Open the Thailand photo gallery"><div class="gallery-track"><img src="images/trip-wat-arun.jpg" alt="Visitor in traditional Thai dress at Wat Arun in Bangkok" width="960" height="1280" loading="lazy"><img src="images/trip-yaowarat-night.jpg" alt="Yaowarat (Chinatown) street in Bangkok at night with neon signs, lanterns and tuk-tuks" width="720" height="1280" loading="lazy"><img src="images/trip-koh-larn-view.jpg" alt="Turquoise bay and beach seen from a hilltop viewpoint on Koh Larn near Pattaya" width="1280" height="960" loading="lazy"><img src="images/trip-koh-larn-rocks.jpg" alt="Turquoise water and a green hill seen from the rocks on Koh Larn near Pattaya" width="960" height="1280" loading="lazy"><img src="images/trip-pattaya-ripleys.jpg" alt="Royal Garden Plaza in Pattaya with a red plane on the building" width="720" height="1280" loading="lazy"><img src="images/trip-mae-kampong.jpg" alt="Wooden shop fronts with red lanterns in Mae Kampong village near Chiang Mai" width="960" height="1280" loading="lazy"><img src="images/trip-northern-thai-food.jpg" alt="Northern Thai dishes on a wooden table, including chilli dip, soup and sticky rice" width="960" height="1280" loading="lazy"><img src="images/trip-lake-sunset.jpg" alt="People watching the sunset over a lake and hazy mountains" width="1280" height="720" loading="lazy"><img src="images/trip-street-snack.jpg" alt="Fried dinosaur-shaped snack on a stick from a Thai street stall" width="960" height="1280" loading="lazy"><img src="images/trip-room-twin.jpg" alt="Hotel room with two twin beds and white linen" width="1280" height="960" loading="lazy"><img src="images/trip-room-balcony.jpg" alt="Hotel balcony with wooden chairs and a view over rooftops" width="1280" height="960" loading="lazy"><img src="images/trip-room-window.jpg" alt="Hotel room with a sliding balcony door and curtains" width="1280" height="960" loading="lazy"><img src="images/trip-wat-arun.jpg" alt="" aria-hidden="true" width="960" height="1280" loading="lazy"><img src="images/trip-yaowarat-night.jpg" alt="" aria-hidden="true" width="720" height="1280" loading="lazy"><img src="images/trip-koh-larn-view.jpg" alt="" aria-hidden="true" width="1280" height="960" loading="lazy"><img src="images/trip-koh-larn-rocks.jpg" alt="" aria-hidden="true" width="960" height="1280" loading="lazy"><img src="images/trip-pattaya-ripleys.jpg" alt="" aria-hidden="true" width="720" height="1280" loading="lazy"><img src="images/trip-mae-kampong.jpg" alt="" aria-hidden="true" width="960" height="1280" loading="lazy"><img src="images/trip-northern-thai-food.jpg" alt="" aria-hidden="true" width="960" height="1280" loading="lazy"><img src="images/trip-lake-sunset.jpg" alt="" aria-hidden="true" width="1280" height="720" loading="lazy"><img src="images/trip-street-snack.jpg" alt="" aria-hidden="true" width="960" height="1280" loading="lazy"><img src="images/trip-room-twin.jpg" alt="" aria-hidden="true" width="1280" height="960" loading="lazy"><img src="images/trip-room-balcony.jpg" alt="" aria-hidden="true" width="1280" height="960" loading="lazy"><img src="images/trip-room-window.jpg" alt="" aria-hidden="true" width="1280" height="960" loading="lazy"></div><span class="gallery-label"><b>Photos from our Thailand trips</b><span>View all 12 photos &rarr;</span></span></a></div></section>
 
   <section id="bookings">
     <div class="wrap">
@@ -735,6 +724,7 @@
         <li><a href="/guides/chiang-mai.html">Chiang Mai travel guide</a></li>
         <li><a href="/guides/phuket.html">Phuket travel guide</a></li>
         <li><a href="/guides/krabi.html">Krabi travel guide</a></li>
+        <li><a href="/gallery.html">Photo gallery</a></li>
         <li><a href="/blog/">Travel blog</a></li>
       </ul></div>
       <div><h2>Contact</h2><ul>

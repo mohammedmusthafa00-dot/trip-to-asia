@@ -106,6 +106,13 @@ thead th { background:var(--navy-deep); color:#fff; font-size:.75rem; letter-spa
 .gallery img { display:block; width:100%; height:auto; }
 .gallery figcaption { padding:8px 12px 10px; font-size:.82rem; color:var(--muted); }
 
+/* full gallery page: one photo at a time */
+.gallery-list { display:flex; flex-direction:column; gap:28px; align-items:center; }
+.gallery-list figure { margin:0; width:100%; max-width:760px; background:var(--card); border:1px solid var(--line); box-shadow:var(--shadow); }
+.gallery-list img { display:block; width:100%; height:auto; }
+.gallery-list figcaption { display:flex; justify-content:space-between; gap:12px; padding:10px 14px 12px; font-size:.9rem; color:var(--muted); }
+.gallery-list .count { font-weight:700; }
+
 /* call to action */
 .cta { margin-top:56px; background:var(--bg-alt); border-top:1px solid var(--line); padding:40px 0; }
 .cta .wrap { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:16px; }
