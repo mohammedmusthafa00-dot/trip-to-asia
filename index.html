@@ -4,13 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<title>Thailand Tour Packages, Indian Food &amp; Tamil Guide | Trip to Asia</title>
+<title>Budget Thailand Tour Packages from South India | Trip to Asia</title>
+<link rel="preload" as="image" href="images/hero-railay.jpg" fetchpriority="high">
 <link rel="icon" type="image/webp" href="images/logo.webp">
-<meta name="description" content="Thailand tour packages from Bangkok to Phuket with 3-star hotels, airport transfers, Indian food and Tamil guides. Or plan a custom itinerary. Enquire today.">
+<meta name="description" content="Budget Thailand tour packages from Chennai, Bengaluru, Hyderabad and Kochi with 3-star hotels, Indian food and Tamil guides. Get a quote on WhatsApp.">
 <link rel="canonical" href="https://www.triptoasia.online/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Trip to Asia">
-<meta property="og:title" content="Thailand Tour Packages, Indian Food &amp; Tamil Guide | Trip to Asia">
+<meta property="og:title" content="Budget Thailand Tour Packages from South India | Trip to Asia">
 <meta property="og:description" content="Five ready-made Thailand packages, from a short Bangkok stay to the Phuket and Krabi islands, or plan your own itinerary.">
 <meta property="og:url" content="https://www.triptoasia.online/">
 <meta property="og:image" content="https://www.triptoasia.online/images/hero-railay.jpg">
@@ -50,7 +51,7 @@
       "@type": "WebPage",
       "@id": "https://www.triptoasia.online/#webpage",
       "url": "https://www.triptoasia.online/",
-      "name": "Thailand Tour Packages, Indian Food & Tamil Guide | Trip to Asia",
+      "name": "Budget Thailand Tour Packages from South India | Trip to Asia",
       "inLanguage": "en",
       "isPartOf": { "@id": "https://www.triptoasia.online/#website" },
       "about": { "@id": "https://www.triptoasia.online/#organization" },
@@ -214,13 +215,8 @@
   /* package card photo backgrounds (files in /images) */
   .pkg-photo { position:relative; isolation:isolate; border-color:transparent; color:#fff; background-size:cover; background-position:68% 42%; background-color:var(--navy-deep); }
   .pkg-photo::before { content:""; position:absolute; inset:0; z-index:-1; border-radius:inherit; background:linear-gradient(90deg, rgba(10,16,48,.88) 0%, rgba(10,16,48,.62) 48%, rgba(10,16,48,.12) 100%), linear-gradient(0deg, rgba(10,16,48,.55) 0%, rgba(10,16,48,0) 55%); }
-  .pkg-bkk { background-image:url("images/bangkok-card.jpg"); }
-  .pkg-pattaya { background-image:url("images/pattaya-card.jpg"); background-position:50% 55%; }
-  .pkg-chiangmai { background-image:url("images/chiangmai-card.jpg"); background-position:50% 70%; }
-  .pkg-phuket { background-image:url("images/phuket-card.jpg"); background-position:50% 60%; }
-  .pkg-krabi { background-image:url("images/krabi-card.jpg"); background-position:60% 50%; }
+  .pkg-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:-2; border-radius:inherit; }
   .pkg-phuket::before { background:linear-gradient(90deg, rgba(10,16,48,.88) 0%, rgba(10,16,48,.7) 55%, rgba(10,16,48,.5) 100%), linear-gradient(0deg, rgba(10,16,48,.55) 0%, rgba(10,16,48,0) 55%); }
-  .pkg-custom { background-image:url("images/hero-railay.jpg"); background-position:50% 55%; }
   .pkg-custom .price .amt { font-size:1.6rem; }
   .pkg-photo:hover { border-color:transparent; }
   .pkg-link { color:inherit; text-decoration:none; }
@@ -313,6 +309,21 @@
   .hero .lede { color:rgba(255,255,255,.86); }
   .hero .summary { margin-top:12px; max-width:62ch; font-size:1rem; }
   .hero .summary b { color:#fff; }
+  .hero h1 { font-size:clamp(3rem, 9vw, 6rem); max-width:16ch; margin-top:10px; }
+  .hero .kicker { font-size:.95rem; }
+  .linkgrid { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill, minmax(230px, 1fr)); gap:10px; }
+  .linkgrid a { display:block; background:var(--card); border:1px solid var(--line); padding:14px 16px; text-decoration:none; font-weight:700; color:var(--ink); }
+  .linkgrid a:hover { border-color:var(--navy); }
+  .linkgrid span { display:block; font-weight:500; font-size:.82rem; color:var(--muted); margin-top:2px; }
+  .sub-head { font-size:1.15rem; margin:0 0 12px; }
+  .foot-inner { max-width:1080px; margin:0 auto; padding:0 20px; }
+  .foot .cols { display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:24px; }
+  .foot h2 { font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; color:var(--ink); margin-bottom:10px; font-family:var(--sans); }
+  .foot ul { list-style:none; margin:0; padding:0; }
+  .foot li { margin:6px 0; }
+  .foot a { color:var(--muted); text-decoration:none; }
+  .foot a:hover { color:var(--ink); text-decoration:underline; }
+  .foot .fine { margin-top:26px; padding-top:18px; border-top:1px solid var(--line); font-size:.82rem; }
   .faq h3 { font-size:1.1rem; margin:24px 0 6px; }
   .faq p { color:var(--muted); max-width:70ch; }
   .faq a { color:var(--navy); font-weight:600; }
@@ -351,7 +362,8 @@
 <main id="top">
   <header class="hero">
     <div class="wrap">
-      <h1>Trip To <em>Asia</em></h1>
+      <p class="kicker">Trip To Asia</p>
+      <h1>Budget Thailand <em>Tour Packages</em></h1>
       <p class="tagline">Thailand holidays, <em>made easy</em> with us</p>
       <p class="lede">Flights, hotels, food, tours and transfers &mdash; planned end to end, so all you have to do is pack your bags.</p>
       <p class="lede summary"><b>In short:</b> Trip to Asia offers five ready-made Thailand packages of 3 to 6 nights across Bangkok, Pattaya, Chiang Mai, Phuket and Krabi, plus custom itineraries. Every package includes a 3-star hotel, airport transfers, entry fees and Indian food. Best for families and groups travelling from India.</p>
@@ -448,6 +460,7 @@
       </div>
       <ul class="pkgs">
         <li class="pkg pkg-photo pkg-bkk">
+          <img class="pkg-img" src="images/bangkok-card.jpg" alt="Temple beside the river in Bangkok at dusk" width="1200" height="800" loading="lazy" style="object-position:68% 42%">
           <div>
             <div class="pkg-top"><span>3N / 4D</span></div>
             <span class="len" style="--d:4"></span>
@@ -457,6 +470,7 @@
           <div class="price"><span class="amt"><small>₹</small>24,999<sup>*</sup></span><span class="other">Other agencies<s>₹34,999</s></span></div>
         </li>
         <li class="pkg pkg-photo pkg-pattaya">
+          <img class="pkg-img" src="images/pattaya-card.jpg" alt="Boats on the sea off Pattaya" width="1200" height="800" loading="lazy" style="object-position:50% 55%">
           <div>
             <div class="pkg-top"><span>4N / 5D</span></div>
             <span class="len" style="--d:5"></span>
@@ -466,6 +480,7 @@
           <div class="price"><span class="amt"><small>₹</small>29,999<sup>*</sup></span><span class="other">Other agencies<s>₹39,999</s></span></div>
         </li>
         <li class="pkg pkg-photo pkg-chiangmai">
+          <img class="pkg-img" src="images/chiangmai-card.jpg" alt="Misty mountains and forest seen from a hilltop near Chiang Mai" width="1200" height="800" loading="lazy" style="object-position:50% 70%">
           <div>
             <div class="pkg-top"><span>5N / 6D</span></div>
             <span class="len" style="--d:6"></span>
@@ -475,6 +490,7 @@
           <div class="price"><span class="amt"><small>₹</small>48,999<sup>*</sup></span><span class="other">Other agencies<s>₹60,000</s></span></div>
         </li>
         <li class="pkg pkg-photo pkg-phuket">
+          <img class="pkg-img" src="images/phuket-card.jpg" alt="Longtail boat below limestone cliffs on the Andaman Sea" width="1200" height="800" loading="lazy" style="object-position:50% 60%">
           <div>
             <div class="pkg-top"><span>6N / 7D</span></div>
             <span class="len" style="--d:7"></span>
@@ -484,6 +500,7 @@
           <div class="price"><span class="amt"><small>₹</small>49,999<sup>*</sup></span><span class="other">Other agencies<s>₹60,000</s></span></div>
         </li>
         <li class="pkg pkg-photo pkg-krabi">
+          <img class="pkg-img" src="images/krabi-card.jpg" alt="Limestone sea stack and green cliffs in the Andaman Sea" width="1200" height="800" loading="lazy" style="object-position:60% 50%">
           <div>
             <div class="pkg-top"><span>5N / 6D</span></div>
             <span class="len" style="--d:6"></span>
@@ -493,6 +510,7 @@
           <div class="price"><span class="amt"><small>₹</small>64,999<sup>*</sup></span><span class="other">Other agencies<s>₹70,000</s></span></div>
         </li>
         <li class="pkg pkg-photo pkg-custom">
+          <img class="pkg-img" src="images/hero-railay.jpg" alt="Longtail boats on Railay beach below a limestone cliff in Krabi" width="1600" height="1066" loading="lazy" style="object-position:50% 55%">
           <div>
             <div class="pkg-top"><span>Your dates &middot; your route</span></div>
             <span class="len" style="--d:7"></span>
@@ -503,6 +521,28 @@
         </li>
       </ul>
       <p class="foot"><b>*</b><span>Prices are in ₹. What each package covers, and whether the price is per person, is not confirmed yet.</span></p>
+    </div>
+  </section>
+
+  <section id="explore">
+    <div class="wrap">
+      <h2 class="sub-head">Thailand packages from your city</h2>
+      <ul class="linkgrid">
+        <li><a href="/thailand-tour-packages-from-chennai.html">Thailand packages from Chennai<span>Tamil guide, Indian food</span></a></li>
+        <li><a href="/thailand-tour-packages-from-bengaluru.html">Thailand packages from Bengaluru<span>Long weekends and short breaks</span></a></li>
+        <li><a href="/thailand-tour-packages-from-hyderabad.html">Thailand packages from Hyderabad<span>Family-friendly trips</span></a></li>
+        <li><a href="/thailand-tour-packages-from-kochi.html">Thailand packages from Kochi<span>Beaches and islands</span></a></li>
+        <li><a href="/thailand-tour-packages-from-coimbatore.html">Thailand packages from Coimbatore<span>Tamil-guide tours</span></a></li>
+      </ul>
+      <h2 class="sub-head" style="margin-top:32px">Thailand travel guides</h2>
+      <ul class="linkgrid">
+        <li><a href="/guides/bangkok.html">Bangkok travel guide<span>Temples, markets and the river</span></a></li>
+        <li><a href="/guides/pattaya.html">Pattaya travel guide<span>Beaches, islands and nightlife</span></a></li>
+        <li><a href="/guides/chiang-mai.html">Chiang Mai travel guide<span>Old city, mountains and food</span></a></li>
+        <li><a href="/guides/phuket.html">Phuket travel guide<span>Beaches and island trips</span></a></li>
+        <li><a href="/guides/krabi.html">Krabi travel guide<span>Limestone cliffs and Railay</span></a></li>
+        <li><a href="/blog/">Travel blog<span>Costs, seasons and planning</span></a></li>
+      </ul>
     </div>
   </section>
 
@@ -645,10 +685,38 @@
   </section>
 </main>
 
-<footer>
-  <div class="wrap">
-    <span>Trip to Asia &middot; Thailand tour packages &middot; WhatsApp +91 96776 45010</span>
-    <span>Prices marked * are unconfirmed.</span>
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="cols">
+      <div><h2>Packages</h2><ul>
+        <li><a href="/bangkok-escape.html">Bangkok Escape</a></li>
+        <li><a href="/bangkok-pattaya.html">Bangkok + Pattaya</a></li>
+        <li><a href="/bangkok-chiangmai.html">Bangkok + Chiang Mai</a></li>
+        <li><a href="/bangkok-pattaya-phuket.html">Bangkok + Pattaya + Phuket</a></li>
+        <li><a href="/phuket-krabi.html">Phuket + Krabi Islands</a></li>
+        <li><a href="/custom-itinerary.html">Custom Itinerary</a></li>
+      </ul></div>
+      <div><h2>Packages from your city</h2><ul>
+        <li><a href="/thailand-tour-packages-from-chennai.html">Thailand packages from Chennai</a></li>
+        <li><a href="/thailand-tour-packages-from-bengaluru.html">Thailand packages from Bengaluru</a></li>
+        <li><a href="/thailand-tour-packages-from-hyderabad.html">Thailand packages from Hyderabad</a></li>
+        <li><a href="/thailand-tour-packages-from-kochi.html">Thailand packages from Kochi</a></li>
+        <li><a href="/thailand-tour-packages-from-coimbatore.html">Thailand packages from Coimbatore</a></li>
+      </ul></div>
+      <div><h2>Travel guides</h2><ul>
+        <li><a href="/guides/bangkok.html">Bangkok travel guide</a></li>
+        <li><a href="/guides/pattaya.html">Pattaya travel guide</a></li>
+        <li><a href="/guides/chiang-mai.html">Chiang Mai travel guide</a></li>
+        <li><a href="/guides/phuket.html">Phuket travel guide</a></li>
+        <li><a href="/guides/krabi.html">Krabi travel guide</a></li>
+        <li><a href="/blog/">Travel blog</a></li>
+      </ul></div>
+      <div><h2>Contact</h2><ul>
+        <li>WhatsApp: <a href="https://wa.me/919677645010">+91 96776 45010</a></li>
+        <li><a href="#enquiry">Send an enquiry</a></li>
+      </ul></div>
+    </div>
+    <div class="fine">&copy; Trip to Asia &middot; Thailand tour packages for travellers from India. Prices marked * are unconfirmed.</div>
   </div>
 </footer>
 
